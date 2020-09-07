@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Connect to Master') {
             steps {
-                sh 'docker exec -it docker-redis-cluster_redis-1_1 redis-cli -c -p 7001'
+                sh 'docker exec -it testpipeline_redis-1_1 redis-cli -c -p 7001'
             }
         }
         stage('Display Cluster Nodes') {
