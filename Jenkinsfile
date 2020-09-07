@@ -15,27 +15,6 @@ pipeline {
                 sh 'docker ps'
             }
         }
-        stage('Build JS') {
-            steps {
-                sh 'npm install'
-            }
-        }
-        stage('Publisher Run') {
-            agent {
-                docker { image 'node:14-alpine' }
-            }
-            steps {
-                sh 'node publisher.js'
-            }
-        }
-        stage('Subcriber Run') {
-            agent {
-                docker { image 'node:14-alpine' }
-            }
-            steps {
-                sh 'node subscriber.js'
-            }
-        }
     }
     post {
         always {
