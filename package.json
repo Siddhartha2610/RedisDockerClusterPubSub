@@ -1,0 +1,25 @@
+{
+  "name": "redisclusterpubsub",
+  "version": "1.0.0",
+  "description": "RedisClusterPubSub Nodejs App",
+  "main": "publisher.js",
+  "scripts": {
+    "test": "node publisher.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sidzure/RedisDockerClusterPubSub.git"
+  },
+  "keywords": [
+    "RedisDockerClusterNodejs"
+  ],
+  "author": "Siddhartha D",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sidzure/RedisDockerClusterPubSub/issues"
+  },
+  "homepage": "https://github.com/Sidzure/RedisDockerClusterPubSub#readme",
+  "dependencies": {
+    "ioredis": "^4.17.3"
+  }
+}
