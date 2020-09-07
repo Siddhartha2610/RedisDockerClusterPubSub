@@ -15,21 +15,6 @@ pipeline {
                 sh 'docker ps'
             }
         }
-        stage('Connect to Master') {
-            steps {
-                sh 'docker exec -it testpipeline_redis-1_1 redis-cli -c -p 7001'
-            }
-        }
-        stage('Display Cluster Nodes') {
-            steps {
-                sh 'cluster nodes'
-            }
-        }
-        stage('Display Cluster Slots') {
-            steps {
-                sh 'cluster slots'
-            }
-        }
         stage('Build JS') {
             steps {
                 sh 'npm install'
