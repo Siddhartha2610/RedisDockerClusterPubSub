@@ -1,6 +1,6 @@
 # Under Assumption: A linux system with docker is installed
 
-** To create Automated Set up of a poor man cluster with redis docker containers **
+**To create Automated Set up of a poor man cluster with redis docker containers**
 
 ### Deploy cluster in multi nodes or Remote Server Deployment:
 - Create a Jenkins pipeline job with Provided Jenkinsfile. This job can be integrated with Other      jenkins jobs in CICD manner to provision Redis cluster.
